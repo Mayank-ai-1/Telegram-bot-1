@@ -7,7 +7,7 @@ memory = InMemorySaver()
 
 agent = create_agent(
     model=gemini_llm,
-    tools=[live_cricket_score,live_football_score]
+    tools = [live_cricket_score, live_football_score],
     system_prompt = "You are a helpful assistant",
     checkpointer=InMemorySaver()
     # tools = [live_cricket_score]
@@ -21,7 +21,7 @@ response = agent.invoke(
                 "content": "What is a cat?"
             }
         ]
-    }
+    },
     config={
         "configurable": {
             "thread_id": "1"
