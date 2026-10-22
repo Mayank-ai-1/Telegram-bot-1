@@ -11,3 +11,4 @@ def live_cricket_score(country1:str, country2:str)->str:
 def live_football_score(country1:str, country2:str)->str:
     """This tool returns the live football score between any 2 given countries"""
     return f"Current score between {country1} and {country2} is 120-3"
+    
